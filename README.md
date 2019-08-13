@@ -11,6 +11,8 @@
 
 As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate this functionality.
 
+In the file `/locales/dialogues.{language}.yml` you can get an insight of how to organize your assistant internationalization functionality.
+
 You are free to explore different solutions and any framework, but you should document and justify your technology choices. **Please write a README explaining your decisions.**
 
 
