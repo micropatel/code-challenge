@@ -16,7 +16,7 @@ In the file `/locales/dialogues.{language}.yml` you can get an insight of how to
 You are free to explore different solutions and any framework, but you should document and justify your technology choices. **Please write a README explaining your decisions.**
 
 
-![Imgur](https://i.imgur.com/4cwAqMC.png)
+![Imgur](https://imgur.com/u58St4X)
 _An example of conversational interface_
 
 
