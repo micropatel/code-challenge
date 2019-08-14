@@ -9,7 +9,7 @@
 -   **Receive** a text message from a reporting person (user) in any language
 -   **Reply** with the correct Salutation on every user input, in the correct user session
 
-As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate this functionality.
+As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate the challenge.
 
 In the file `/locales/dialogues.{language}.yml` you can get an insight of how to organize your assistant internationalization functionality.
 
@@ -17,6 +17,7 @@ You are free to explore different solutions and any framework, but you should do
 
 
 ![Imgur](https://i.imgur.com/u58St4X.png)
+
 _An example of conversational interface_
 
 
@@ -24,7 +25,7 @@ _An example of conversational interface_
 
 A user will join a Chat Session and can send any message into that session. User messages will always go through this process and messages should have an unique, randomly generated ID. 
 
-The session is used to keep track of how many messages were sent between a user and the bot and if a refresh occurs, still display past messages_ from that session._
+The session is used to keep track of how many messages were sent between a user and the bot and if a refresh occurs, still display past messages _from that session_.
 
 **Request**
 
@@ -56,6 +57,7 @@ The session is used to keep track of how many messages were sent between a user 
 // Language is not supported
 {
  "error": {
+   "code": 422,
    "message": "Unfortunately we don't have support for your language yet."
   }
 }
@@ -91,10 +93,14 @@ GET "/sessions/{session-id}/messages/{identifier-id}"
 
 **Response (error)**
 
-```javascript
+```json5
 // Message ID doesn't exist for this session
-
-Status 404
+{
+  "error": {
+    "code": 404,
+    "message": "Resource doesn't exist"
+  }
+}
 ```
 
 _a) Response status should be 200 for success_
@@ -149,9 +155,6 @@ We would love to see an implementation that contains one or more of the items be
 -   Chat between user and bot uses `WebSockets`
 -   Front-end can be used to send messages
 -   Front-end test framework was used
--   Project demonstrates scalability
--   Thoroughly testing coverage
-
 
 
 ## 6. What we are looking for
@@ -161,7 +164,7 @@ For this challenge, we are looking at how you document, test and develop feature
 
 ## 7. How to deliver this challenge
 
-Please deliver the solution using a public repository on GitHub. Your repository should contain full instructions and documentation for us to run and test the project.
+Please deliver the solution using a public repository URL on GitHub. Your repository should contain full instructions and documentation for us to run and test the project. You can clone and develop on top of this repository as well.
 
 Hosting the solution on a cloud provider (https://heroku.com, AWS, https://now.sh) is a great plus!
 
