@@ -27,6 +27,8 @@ A user will join a Chat Session and can send any message into that session. User
 
 The session is used to keep track of how many messages were sent between a user and the bot and if a refresh occurs, still display past messages _from that session_.
 
+**For security reasons the text of a user message should not be stored, only the metadata of it (language, etc).**
+
 **Request**
 
     POST "/sessions/{session-id}/messages"
