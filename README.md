@@ -9,7 +9,7 @@
 -   **Receive** a text message from a reporting person (user) in any language
 -   **Reply** with the correct Salutation on every user input, in the correct user session
 
-As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate the challenge (we are big fans of React).
+As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate the challenge (we are big fans of React), **but it's not mandatory**!
 
 In the file `/locales/dialogues.{language}.yml` you can get an insight of how to organize your assistant internationalization functionality.
 
