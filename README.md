@@ -9,7 +9,7 @@
 -   **Receive** a text message from a reporting person (user) in any language
 -   **Reply** with the correct Salutation on every user input, in the correct user session
 
-As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate the challenge (we are big fans of React), **but it's not mandatory**!
+As this challenge is based on the concept of real-time conversations (chat bots), you are encouraged to use a front-end implementation to demonstrate the challenge (we are big fans of React), **but it's not mandatory**.
 
 In the file `/locales/dialogues.{language}.yml` you can get an insight of how to organize your assistant internationalization functionality.
 
@@ -70,8 +70,7 @@ _b) Response Status should be __422__ for error_
 
 
 
-
-## 3. Fetch a message 
+## 3. Fetch a message
 
 This endpoint returns the information about a message sent into the session. It can be used to retrieve information about a previous message.
 
@@ -111,12 +110,13 @@ _c) Content-Type should be JSON_
 
 
 
-
 ## 4. Reply with Bot Message
 
 The first message sent into the session defines the language that is going to be used in the entirety of the conversation between the user and the bot.
 
-This endpoint provides all replies from the bot in the detected language for this session. The replies should be ordered by timestamp in **descending** order.
+This endpoint provides all replies from the bot in the detected language for this session. The reason for not including the user messages at the moment is on purpose: we only want to understand which flow the bot used for the conversation.
+
+The replies should be ordered by timestamp in **descending** order.
 
 _After the first message, you should not display the salutation again_.
 
@@ -149,26 +149,25 @@ GET "/sessions/{session-id}/replies"
 
 _**Hint:**_ You can find language detection libraries for almost any programming language online_
 
-## 5. Optional Extras
+## 5. Optionals
 
-We would love to see an implementation that contains one or more of the items below, but they are optional:
+We would love to see an implementation that contains one or more of the items below, but they are completely optional:
 
--   Project uses `Dockerfile` and `docker-compose.yml`  
+-   Project uses `Dockerfile` and `docker-compose.yml`
 -   Chat between user and bot uses `WebSockets`
 -   Front-end can be used to send messages
 -   Front-end test framework was used
+-   Hosting the solution in a cloud provider (https://heroku.com, Amazon AWS, https://now.sh)
 
 
 ## 6. What we are looking for
 
-For this challenge, we are looking at how you document, test and develop features given the guidelines provided using clean code. We want to see if you are familiar with the concepts of APIs, REST and HTTP. 
+For this challenge, we are looking at how you document, test and develop features given the guidelines provided using clean & structured code. We want to see if you are familiar with the concepts of APIs, REST and HTTP. 
 
 
 ## 7. How to deliver this challenge
 
 Please deliver the solution using a public repository URL on GitHub. Your repository should contain full instructions and documentation for us to run and test the project. You can clone and develop on top of this repository as well.
-
-Hosting the solution on a cloud provider (https://heroku.com, AWS, https://now.sh) is a great plus!
 
 
 ## 8. How we are evaluating
