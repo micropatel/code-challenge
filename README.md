@@ -37,7 +37,10 @@ The session is used to keep track of how many messages were sent between a user 
 
 **Request**
 
-    POST "/sessions/{session-id}/messages"
+```javascript
+POST "/sessions/{session-id}/messages"
+```
+
 ```json5
 {
     "text": "{user-text-input}",
@@ -88,7 +91,7 @@ GET "/sessions/{session-id}/messages/{identifier-id}"
 **Response (success)**
 
 ```json5
-    {
+{
     "message": {
         "identifier": "{identifier-id}",
         "detected_language": "es",
