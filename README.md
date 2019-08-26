@@ -115,7 +115,7 @@ _c) Content-Type should be JSON_
 
 
 
-## 4. Reply with Bot Message
+## 4. Reply/Fetch all Bot Messages
 
 The first and second messages sent into the session should define the language that is going to be used in the messages sent by the bot.
 
