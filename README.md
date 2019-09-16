@@ -3,7 +3,18 @@
 **Lytt**, the first digital assistant that makes it easy for employees to communicate sensitive topics at work and is currently working in a new assistant functionality: recognize a message language and reply with the correct Bot message. Lytt is asking you _to develop this new REST API!_
 
 
-## 1. What you have to do
+- [Code Challenge](#code-challenge)
+  - [What you have to do](#what-you-have-to-do)
+    - [1. Receive: a user text message](#1-receive-a-user-text-message)
+    - [2. Fetch a message](#2-fetch-a-message)
+    - [3. Reply/Fetch all Bot Messages](#3-replyfetch-all-bot-messages)
+  - [5. Optionals](#5-optionals)
+  - [6. What we are looking for](#6-what-we-are-looking-for)
+  - [7. How to deliver this challenge](#7-how-to-deliver-this-challenge)
+  - [8. How we are evaluating](#8-how-we-are-evaluating)
+
+
+## What you have to do
 
 Create 3 endpoints that summarize this:
 
@@ -25,7 +36,7 @@ You are free to explore different solutions and any framework, but you should do
 _An example of conversational interface_
 
 
-## 2. Receive: a user text message
+### 1. Receive: a user text message
 
 A user will join a Chat "Session" and can send any message into that session. User messages will always go through this process and messages/session should have an unique, **randomly** generated ID. 
 
@@ -78,7 +89,7 @@ _a) Response Status should be 201 for success_
 _b) Response Status should be __422__ for error_
 
 
-## 3. Fetch a message
+### 2. Fetch a message
 
 This endpoint returns the information about a message sent into the session. It can be used to retrieve information about a previous message.
 
@@ -118,7 +129,7 @@ _c) Content-Type should be JSON_
 
 
 
-## 4. Reply/Fetch all Bot Messages
+### 3. Reply/Fetch all Bot Messages
 
 The first and second messages sent into the session should define the language that is going to be used in the messages sent by the bot.
 
